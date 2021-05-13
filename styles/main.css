@@ -1,0 +1,15 @@
+
+#navbar{
+    position: fixed;
+    width: 250px;
+    min-width: 250px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: blanchedalmond;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+}

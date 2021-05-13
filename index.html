@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Documentación técnica</title>
+</head>
+
+<body>
+    <nav id="navbar">
+
+        <header>Diseño geométrico de carreteras</header>
+
+        <ul>
+            <li><a href="#Introduction" class="nav-link">Introducción</a></li>
+            <li><a href="#zeros_Line" class="nav-link">Línea de ceros</a></li>
+            <li><a href="#preliminary_Layout" class="nav-link">Trazado preliminar</a></li>
+            <li><a href="#horizontal_Design" class="nav-link">Diseño horizontal</a></li>
+            <li><a href="#vertical_Design" class="nav-link">Diseño vertical</a></li>
+            <li><a href="#cross_Desing" class="nav-link">Diseño de sección transversal</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+
+        <section id="Introduction" class="main-section">
+            <header>Introducción</header>
+            <p>Carretera es una infraestructura de transporte cuyo fin es propiciar, bajo condiciones adecuadas
+                de seguridad y comodidad, un medio físico para la circulación de los vehículos en condiciones de
+                continuidad en el espacio y el tiempo.
+            </p>
+
+            <p>Dependiendo de las necesidades y en tráfico que
+                la utilizará (demanda), la carretera puede estar
+                constituida por una o varias calzadas, uno o varios
+                sentidos de circulación o dos o varios carriles en
+                cada sentido.</p>
+        </section>
+
+        <section id="zeros_Line" class="main-section">
+            <header>Línea de ceros</header>
+            <p>Es una línea que une los puntos obligados del proyecto conservando una pendiente especificada, constante
+                y uniforme. Esta línea va a ras del terreno y, de coincidir con el eje de la vía, presentaría un mínimo
+                movimiento de tierra.</p>
+        </section>
+
+        <section id="preliminary_Layout" class="main-section">
+            <header>Trazado preliminar</header>
+            <p>Luego de decidir cual de las alternativas en estudio presenta las mejores condiciones se procede a
+                definir sobre esta la línea preliminar. La poligonal del proyecto definitivo corresponde prácticamente a
+                la línea preliminar, o a esta última con algunos cambios mínimos que se requieran en el momento de
+                realizar el diseño geométrico o de materializar el eje de la vía.</p>
+                <p>Se considera como distancia de visibilidad de parada de un determinado punto de
+                    una carretera, la distancia necesaria para que el conductor de un vehículo pueda
+                    detenerlo antes de llegar a un obstáculo que aparezca en su trayectoria al circular
+                    a la velocidad específica del elemento (VCH, VETH, VCV o VTV) en el cual se quiere
+                    verificar esta distancia de visibilidad. La distancia de visibilidad de parada para pavimentos húmedos, se calcula
+                    mediante la siguiente expresión:</p>
+
+                    <code>Dp = 0.278 x Ve x t + 0.039 x Ve^2/a</code>
+
+                    <p>Donde:
+
+                        <ul>
+                            <li>DP = Distancia de Visibilidad de parada, en metros.</li>
+                            <li>Ve =Velocidad Específica del elemento sobre el cual se ejerce la
+                                maniobra de frenado (VCH, VETH, VCV o VTV), en km/h.</li>
+                            <li>t = Tiempo de percepción – reacción, igual a 2.5 s.</li>
+                            <li>a = Rata de desaceleración, igual a 3.4 m/s^2</li>
+                        </ul>
+                    </p>
+
+        </section>
+
+        <section id="horizontal_Design" class="main-section">
+            <header>Diseño horizontal</header>
+            <p>El alineamiento horizontal está constituido por alineamientos rectos, curvas circulares y curvas de grado
+                de curvatura variable que permiten una transición suave al pasar de alineamientos rectos a curvas
+                circulares o viceversa o también entre dos curvas circulares de curvatura diferente. El alineamiento
+                horizontal debe permitir una operación segura y cómoda a la velocidad de diseño.</p>
+                <p>Cuando un vehículo circula por una curva horizontal a una velocidad dada, el diseño de
+                    la vía en dicha curva debe garantizar al conductor un recorrido seguro y confortable.
+                    Para lograr este objetivo es necesario recurrir a las leyes de la física mediante la
+                    ecuación de equilibrio</p>
+                <code>Rc=(Vch)^2/(127*(e+fT))</code>
+                <p>Donde:
+                    <ul>
+                        <li>Rc = Radio de la curva circular, en metros.</li>
+                        <li>Vch = Velocidad Específica para la que se diseña la curva, en km/h.</li>
+                        <li>e: Peralte de la calzada en la curva, en tanto por uno.</li>
+                        <li>fT: Coeficiente de fricción transversal.</li>
+                    </ul>
+                </p>
+            </section>
+
+        <section id="vertical_Design" class="main-section">
+            <header>Diseño vertical</header>
+            <p>El alineamiento vertical está formado por una serie de rectas enlazadas por arcos parabólicos, a los que
+                dichas rectas son tangentes. La inclinación de las tangentes verticales y la longitud de las curvas
+                dependen principalmente de la topografía de la zona, del alineamiento horizontal, de la visibilidad, de
+                la velocidad del proyecto, de los costos de construcción, de los costos de operación, del porcentaje de
+                vehículos pesados y de su rendimiento en los ascensos.</p>
+        </section>
+
+        <section id="cross_Desing" class="main-section">
+            <header>Diseño de sección transversal</header>
+            <p>La sección transversal describe los elementos de la carretera en un plano normal a su eje.</p>
+            <p> El ancho de zona o derecho de vía es la faja de terreno destinada a la construcción, mantenimiento, futuras
+                ampliaciones, si la demanda de tránsito así lo exige, servicios de seguridad,
+                servicios auxiliares y desarrollo paisajístico. A esta zona no se le puede dar uso
+                privado.</p>
+            <p>La corona es el conjunto formado por la calzada y las bermas. El ancho de corona es la
+                distancia horizontal medida normalmente al eje entre los bordes interiores de las
+                cunetas.</p>
+        </section>
+
+
+    </main>
+</body>
+</html>
