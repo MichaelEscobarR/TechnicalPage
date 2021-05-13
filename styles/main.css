@@ -6,10 +6,35 @@
     height: 100%;
     top: 0;
     left: 0;
+
     background-color: blanchedalmond;
+
 }
 
 .nav-link{
     text-decoration: none;
     color: black;
+}
+
+#main-doc{
+    position: relative;
+    margin-left: 250px;
+}
+
+header{
+    font-size: 30px;
+}
+
+p, ul, code{
+    text-align: justify;
+}
+
+@media only screen and (max-width: 800px) {
+    #navbar{
+        position: absolute;
+        max-height: 250ox;
+        max-width: 250px;
+        background-color: brown;
+    }
+
 }
