@@ -11,14 +11,29 @@
 
 }
 
+header{
+    background-color: tomato;
+}
 .nav-link{
     text-decoration: none;
     color: black;
+    font-size: 20px;
+
+}
+
+#ul-nav{
+
+    list-style: none;
+}
+
+#ul-nav li{
+border-bottom:solid;
 }
 
 #main-doc{
     position: relative;
     margin-left: 250px;
+    font-family: cursive;
 }
 
 header{
@@ -29,12 +44,14 @@ p, ul, code{
     text-align: justify;
 }
 
+
+
 @media only screen and (max-width: 800px) {
     #navbar{
         position: absolute;
         max-height: 250ox;
         max-width: 250px;
-        background-color: brown;
+        background-color:rgba(205, 164, 50, 0.521)
     }
 
 }
