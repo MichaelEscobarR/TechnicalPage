@@ -1,33 +1,38 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 #navbar{
     position: fixed;
     width: 250px;
-    min-width: 250px;
     height: 100%;
     top: 0;
     left: 0;
-
     background-color: blanchedalmond;
-
 }
 
-header{
+header, h1{
     background-color: tomato;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
 }
+
 .nav-link{
     text-decoration: none;
     color: black;
     font-size: 20px;
-
+}
+img{
+    width: 100%;
 }
 
-#ul-nav{
-
-    list-style: none;
-}
 
 #ul-nav li{
 border-bottom:solid;
+border-color: tomato;
+list-style: none;
 }
 
 #main-doc{
@@ -35,17 +40,9 @@ border-bottom:solid;
     margin-left: 250px;
     font-family: cursive;
 }
-
-header{
-    font-size: 30px;
-}
-
 p, ul, code{
     text-align: justify;
 }
-
-
-
 @media only screen and (max-width: 800px) {
     #navbar{
         position: absolute;
